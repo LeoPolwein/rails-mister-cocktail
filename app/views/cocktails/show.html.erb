@@ -35,6 +35,10 @@
   </div>
 
   <div class="row">
+      <%= link_to "Delete Cocktail", cocktail_path(@cocktail), method: :delete, class:"btn btn-primary mx-auto", id:"deletec" %>
+  </div>
+
+    <div class="row">
       <%= link_to "See all Cocktails", cocktails_path, class:"btn btn-primary mx-auto", id:"seecbtn" %>
   </div>
 </div>
