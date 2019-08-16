@@ -70,7 +70,7 @@ background-size: cover;
 // New PAGE
 #addbtn {
   margin-top: 10px;
-  font-size: 35px;
+  font-size: 25px;
   background-color: $cardbg;
   color: $blue;
   border: none;
@@ -86,6 +86,7 @@ background-size: cover;
   color: $blue;
   border: none;
   box-shadow: 0 10px 6px -6px grey;
+  margin-bottom: 40px;
   &:hover {
     color: $yellow;
   }
@@ -100,7 +101,49 @@ background-size: cover;
   margin-bottom: 40px;
 }
 
-.form-group {
-  margin-bottom: 40px;
+.list-group-item {
+  background-color: $cardbg;
+  color: $blue;
+
+  a {
+    text-decoration: none;
+    color: $yellow;
+  }
+
 }
 
+h2 {
+  color: $blue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: $nicefont;
+}
+
+#newdosebtn {
+  font-size: 20px;
+  background-color: $cardbg;
+  color: $blue;
+  border: none;
+  box-shadow: 0 10px 6px -6px grey;
+  margin-bottom: 40px;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+#seecbtn {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 25px;
+  background-color: $cardbg;
+  color: $blue;
+  border: none;
+  box-shadow: 0 10px 6px -6px grey;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.formheader {
+    margin-top: 30px;
+}
