@@ -1,12 +1,18 @@
-<h1>Add a COCK...tail</h1>
+<div class="container">
+  <div class="row text-center">
+    <h1 class="header" id="addheader">Developers can handle drinks - add one</h1>
+  </div>
 
-<div class="form-group">
-<%= simple_form_for(@cocktail) do |c| %>
-<%= c.input :name %>
-<%= c.submit "Add a Cocktail", class:"btn btn-primary" %>
-<% end %>
-</div>
+  <div class="row">
+    <div class="form-group mx-auto col-10">
+      <%= simple_form_for(@cocktail) do |c| %>
+      <%= c.input :name %>
+      <%= c.submit "Add a Cocktail", class:"btn btn-primary mx-auto", id:"formbtn" %>
+      <% end %>
+    </div>
+  </div>
 
-<div>
-<%= link_to "See all Cocktails", cocktails_path, class:"btn btn-primary" %>
+  <div class="row mx-auto">
+      <%= link_to "See all Cocktails", cocktails_path, class:"btn btn-primary", id:"addbtn" %>
+  </div>
 </div>

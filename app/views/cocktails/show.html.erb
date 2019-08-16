@@ -1,3 +1,4 @@
+<div class="container">
 <h1> <%= @cocktail.name %></h1>
 
 <h2> Doses </h2>
@@ -11,17 +12,17 @@
 <h2>Add new Dose</h2>
 
 <div>
-<%= simple_form_for([@cocktail, @dose]) do |d| %>
-<%= d.association :ingredient %>
-<%= d.input :description %>
-<%= d.submit "Add a Dose", class:"btn btn-primary" %>
-<% end %>
+  <%= simple_form_for([@cocktail, @dose]) do |d| %>
+  <%= d.association :ingredient %>
+  <%= d.input :description %>
+  <%= d.submit "Add a Dose", class:"btn btn-primary" %>
+  <% end %>
 </div>
 
 <div class="my-5">
   <%= link_to "See all Cocktails", cocktails_path, class:"btn btn-primary" %>
 </div>
-
+</div>
 
 
 

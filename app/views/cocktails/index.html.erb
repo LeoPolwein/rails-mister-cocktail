@@ -1,10 +1,27 @@
-<h1>COCK....tail</h1>
+<div class="container">
+  <div class="row text-center">
+    <div class="header mx-auto">
+      <h1>LeWagon Cocktails</h1>
+    </div>
+  </div>
 
-<ul>
-  <% @cocktails.each do |c| %>
-  <li> <%= link_to c.name, cocktail_path(c) %> </li>
-  <% end %>
-</ul>
 
-<%= link_to "Add a Cocktail", new_cocktail_path, class:"btn btn-primary" %>
 
+  <div class="cocktail-section row">
+    <% @cocktails.each do |c| %>
+    <div class="col-6">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=986&q=80" class="card-img-top" alt="Cocktail image">
+        <div class="card-body">
+      <%= link_to c.name, cocktail_path(c), class:"card-title" %>
+      </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+
+  <div class="row" id="footer-hp">
+    <%= link_to "Add a Cocktail", new_cocktail_path, class:"btn btn-primary mx-auto", id:"hp-button" %>
+  </div>
+</div>

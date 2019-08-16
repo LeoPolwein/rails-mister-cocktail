@@ -1,1 +1,106 @@
 // Specific CSS for your home-page
+$background: #330000;
+$blue: #B6D6CC;
+$cardbg: #1A1B41;
+$pink: #EAC5D8;
+$yellow: #EFCA08;
+$nicefont: 'Source Code Pro', monospace;
+
+body {
+background-color: $background;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
+.header {
+  color: $blue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: $nicefont;
+
+  h1 {
+    font-size: 50px;
+    font-family: $nicefont;
+    font-weight: bold;
+  }
+}
+
+#hp-button {
+  margin-top: 10px;
+  font-size: 35px;
+  background-color: $cardbg;
+  color: $blue;
+  border: none;
+  box-shadow: 0 10px 6px -6px grey;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.col-6 {
+  margin-bottom: 20px;
+}
+
+.card-body {
+  text-align: center;
+  background-color: $cardbg;
+}
+
+#footer-hp {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.card-title {
+  text-decoration: none;
+  color: $blue;
+  font-family: $nicefont;
+  &:hover {
+    text-decoration: none;
+    color: $yellow;
+  }
+}
+
+.card {
+  border: none;
+  box-shadow: 0 10px 6px -6px;
+}
+
+// New PAGE
+#addbtn {
+  margin-top: 10px;
+  font-size: 35px;
+  background-color: $cardbg;
+  color: $blue;
+  border: none;
+  box-shadow: 0 10px 6px -6px grey;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+#formbtn {
+  font-size: 20px;
+  background-color: $cardbg;
+  color: $blue;
+  border: none;
+  box-shadow: 0 10px 6px -6px grey;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.form-control-label {
+  color: $blue;
+  font-family: $nicefont;
+}
+
+#addheader {
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 40px;
+}
+
